@@ -4,9 +4,10 @@
 
 <br/>
 
+
+
 **Troy Dela Rosa**  
-📍 Winnipeg, Canada  
-🎓 DSML @ RRC Polytech  
+🎓 DSML @ RRC Polytech · 🏳️‍🌈 LGBT in Tech  
 
 </div>
 
