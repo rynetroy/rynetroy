@@ -1,8 +1,32 @@
+<div align="center">
 
-## 💫 About Me:
-<br>🎓 Data Science & Machine Learning (DSML) student at RRC Polytech<br><br>👨‍💻 Mature student returning to tech, bringing real-world discipline and problem-solving skills<br><br>📊 Interested in turning data into actionable insights and ML-driven solutions<br><br>⚙️ Focused on practical, applied projects rather than theory alone<br><br><br>***🔍 Currently Working On***<br><br>🐍 Data analysis with Python, Pandas, NumPy<br><br>📈 Exploratory Data Analysis (EDA) and data visualization<br><br>🤖 Building and evaluating machine learning models<br><br>🧹 Data cleaning, feature engineering, and model evaluation<br><br>🗄️ Working with SQL and structured datasets<br><br><br>***🎯 Goals***<br><br>🚀 Build a strong DS/ML project portfolio<br><br>🏗️ Gain hands-on experience with real-world datasets<br><br>💼 Transition into a Data Architect/Engineer or Junior ML role
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Data+Science+%26+Machine+Learning+Student;Turning+Data+Into+Decisions;Building+Real-World+ML+Projects" />
 
+<br/>
 
+**Troy Dela Rosa**  
+📍 Winnipeg, Canada  
+🎓 DSML @ RRC Polytech  
+
+</div>
+
+---
+
+## ⚡ Focus
+
+- Applied Data Science & Machine Learning  
+- Real-world datasets → actionable insights  
+- Practical over theoretical  
+- Python • SQL • ML pipelines  
+
+---
+## 🎯 Goals
+
+- Build a production-ready DS/ML portfolio  
+- Strengthen data engineering foundations  
+- Transition into Data Engineer / Junior ML roles  
+
+---
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/datadivatroie) 
 
