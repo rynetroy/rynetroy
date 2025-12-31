@@ -7,7 +7,7 @@
 
 
 **Troy Dela Rosa**  
-🎓 DSML @ RRC Polytech · 🏳️‍🌈 LGBT in Tech  
+🎓 DSML @ RRC Polytech · 🏳️‍🌈 LGBTQ+ in Tech  
 
 </div>
 
