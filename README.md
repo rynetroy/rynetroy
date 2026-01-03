@@ -4,9 +4,11 @@
 
 <br/>
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,4,5,6&height=220&text=Troy%20Dela%20Rosa&fontColor=ffffff&fontSize=40&animation=fadeIn" />
+</p>
 
 
-**Troy Dela Rosa**  
 🎓 DSML @ RRC Polytech · 🏳️‍🌈 LGBTQ+ in Tech  
 
 </div>
