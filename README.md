@@ -51,3 +51,8 @@
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Visitors&color=blueviolet&style=for-the-badge" />
 </p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rynetroy/rynetroy/main/assets/go-touch-grass.png" alt="Go Touch Grass" width="200"/>
+</p>
+
