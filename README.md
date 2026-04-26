@@ -15,19 +15,26 @@
 
 ---
 
-## ⚡ Focus
+## Focus
 
-- Applied Data Science & Machine Learning  
-- Real-world datasets → actionable insights  
-- Practical over theoretical  
-- Python • SQL • ML pipelines  
+I focus on applied analytics projects that connect technical skills with business decisions, especially in retail, pricing, ecommerce, and customer behavior.
+
+- Retail & pricing analytics
+- Business intelligence and dashboard development
+- Ecommerce funnel and customer analytics
+- SQL, Python, Power BI, and applied machine learning
+- Data storytelling for practical decision-making
 
 ---
-## 🎯 Goals
 
-- Build a production-ready DS/ML portfolio  
-- Strengthen data engineering foundations  
-- Transition into Data Engineer / Junior ML roles  
+## Goals
+
+My goal is to move into a data-focused role where I can combine my retail leadership experience with analytics, reporting, and machine learning.
+
+- Target roles: Data Analyst, Business Analyst, Pricing Analyst, Ecommerce Analyst
+- Build a project portfolio grounded in real business problems
+- Improve technical depth in SQL, Python, Power BI, and data modeling
+- Use machine learning as a decision-support tool for business outcomes
 
 ---
 ## 🌐 Socials:
