@@ -56,3 +56,6 @@
   <img src="https://raw.githubusercontent.com/rynetroy/rynetroy/main/assets/go-touch-grass.png" alt="Go Touch Grass" width="200"/>
 </p>
 
+## Contribution Snake
+
+![Snake animation](https://github.com/rynetroy/rynetroy/blob/output/github-contribution-grid-snake-dark.svg)
