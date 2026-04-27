@@ -38,6 +38,13 @@ My background combines retail leadership experience with hands-on work in **SQL,
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/troy-dela-rosa-4058115a)
 [![Instagram](https://img.shields.io/badge/Instagram-datadivatroie-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/datadivatroie)
 
----
+
+
+## Profile Visits
+
+![Profile Views](https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Views&color=58A6FF&style=flat-square)
+
 
 <img src="https://raw.githubusercontent.com/rynetroy/rynetroy/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+
+
