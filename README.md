@@ -2,7 +2,6 @@
 
 <br/>
 
----
 
 ## About Me
 
@@ -10,7 +9,6 @@ I build applied analytics projects that connect technical skills with business d
 
 My background combines retail leadership experience with hands-on work in **SQL, Python, Power BI, machine learning, and data storytelling**.
 
----
 
 ## Current Focus
 
@@ -20,7 +18,6 @@ My background combines retail leadership experience with hands-on work in **SQL,
 - SQL, Python, Power BI, and machine learning
 - Data storytelling for decision-making
 
----
 
 ## Tech Stack
 
@@ -58,7 +55,6 @@ My background combines retail leadership experience with hands-on work in **SQL,
 ![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-D83B01?style=flat-square&logo=microsoftoffice&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white)
 
----
 
 ## Connect
 
