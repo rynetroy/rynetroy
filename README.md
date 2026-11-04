@@ -135,6 +135,19 @@ if __name__ == "__main__":
 🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Live demo](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 <sub>Prototype on synthetic GA4-style data. Not a production model.</sub>
 
+### Winnipeg Business Licence Data Governance (DAMA-DMBOK)
+**Independent Personal Project** | Data governance on public data | Nov 2026, in progress
+`Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
+
+<img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_funnel.png" width="600" alt="Downtown licences counted as active, rule by rule: April 2026 621, 322, 34; November 2026 234, 197, 196" />
+
+- **Counting "Issued" licences overstated active downtown licences about 18 times in April 2026 (621 vs 34 once duplicates and expired licences were removed).** Seven months later the same dataset gave 196, after the City's own status cleanup, and nothing on the portal documented the change.
+- Built a repeatable pipeline that pulls the City's open data API into dated snapshots that are never overwritten, checks row counts, and compares snapshots: history added back to 2010, two new licence families, duplicate rows down from 55.8% to 15.6%.
+- Wrote the governance layer for this dataset: a charter with decision rights, a RACI, a decision log, and a data dictionary generated from code. Building it surfaced issues profiling missed (neighbourhood codes losing trailing zeros) and led me to keep raw records out of the repo, since some licence types include addresses that may belong to individuals.
+
+🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
+<sub>Personal project on City of Winnipeg open data, not affiliated with or endorsed by the City. Next: quality rules, scorecard and a Power BI report.</sub>
+
 ### DROP IF Orphan: Game Store Database (SQL)
 **Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
 `SQL` `MySQL` `MariaDB` `GitHub Pages`
