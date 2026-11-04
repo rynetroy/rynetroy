@@ -16,14 +16,14 @@
 |---|---|
 | **Education** | Data Science & Machine Learning, Applied Diploma, Red River College Polytechnic (Aug 2025 to May 2027) |
 | **Experience** | 10+ years in retail operations, most recently Store Director at Saks OFF 5TH ($2M+ store, 6 leaders, 15 associates) |
-| **Focus** | Data analytics, business intelligence, predictive modeling, applied AI |
-| **Looking for** | Winter 2027 co-op or internship in data, analytics, BI or applied AI. Eligible to work full-time in Canada |
+| **Focus** | Data analytics, business intelligence, data governance, predictive modeling, applied AI |
+| **Looking for** | Winter 2027 co-op or internship in data analytics, BI, data governance or applied AI. Eligible to work full-time in Canada |
 
 ## How I Work
 
-I spent 10+ years running retail stores, reading sales, margin, traffic and inventory reports every week to decide what to do next. Now I'm studying Data Science & Machine Learning and building the other half: SQL, Power BI, Python and machine learning.
+I spent 10+ years running retail stores, reading sales, margin, traffic and inventory reports every week to decide what to do next. Now I'm building the other half: SQL, Power BI, Python and machine learning.
 
-A model can be accurate and still solve the wrong problem. So every project below is written the same way: **what the data shows, what it means, and what I'd do about it.**
+A model can be accurate and still solve the wrong problem, so every project below answers three questions:
 
 **What is happening? → So what does it mean? → What should be done next?**
 
@@ -128,22 +128,20 @@ if __name__ == "__main__":
 
 <img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="600" alt="Conversion rate by propensity decile" />
 
-- **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%).** A marketing team could focus spend on those sessions instead of treating every visitor the same.
-- Found them with an XGBoost model (~0.80 ROC-AUC), checked for data leakage with train, validation and test splits, and calibrated probabilities (Platt scaling) so the scores could be read as real likelihoods.
-- Turned the calibrated scores into expected revenue ($1.98M predicted vs $1.74M actual on the test set, +13.6%) and used SHAP to show which behaviours drive conversion, in a live Streamlit demo for non-technical review.
+- **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%),** so a marketing team could focus spend there instead of treating every visitor the same.
+- XGBoost model (~0.80 ROC-AUC) with leakage checks and calibrated probabilities (Platt scaling), turned into expected revenue ($1.98M predicted vs $1.74M actual on the test set, +13.6%) and explained with SHAP in a live Streamlit demo.
 
 🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Live demo](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 <sub>Prototype on synthetic GA4-style data. Not a production model.</sub>
 
 ### Winnipeg Business Licence Data Governance (DAMA-DMBOK)
 **Independent Personal Project** | Data governance on public data | Nov 2026, in progress
-`Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
+`Python` `pandas` `DuckDB` `SQL` `REST API` `DAMA-DMBOK`
 
 <img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_funnel.png" width="600" alt="Downtown licences counted as active, rule by rule: April 2026 621, 322, 34; November 2026 234, 197, 196" />
 
-- **Counting "Issued" licences overstated active downtown licences about 18 times in April 2026 (621 vs 34 once duplicates and expired licences were removed).** Seven months later the same dataset gave 196, after the City's own status cleanup, and nothing on the portal documented the change.
-- Built a repeatable pipeline that pulls the City's open data API into dated snapshots that are never overwritten, checks row counts, and compares snapshots: history added back to 2010, two new licence families, duplicate rows down from 55.8% to 15.6%.
-- Wrote the governance layer for this dataset: a charter with decision rights, a RACI, a decision log, and a data dictionary generated from code. Building it surfaced issues profiling missed (neighbourhood codes losing trailing zeros) and led me to keep raw records out of the repo, since some licence types include addresses that may belong to individuals.
+- **Counting "Issued" licences overstated active downtown licences about 18 times in April 2026 (621 vs 34 after removing duplicates and expired licences).** Seven months later the same count gave 196, after the City's status cleanup, and nothing on the portal documented the change.
+- Built a pipeline that saves dated, never-overwritten snapshots from the City's open data API and compares them (history added back to 2010, duplicate rows down from 55.8% to 15.6%), plus a governance charter, RACI, decision log and code-generated data dictionary. Raw records stay out of the repo because some include addresses that may belong to individuals.
 
 🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
 <sub>Personal project on City of Winnipeg open data, not affiliated with or endorsed by the City. Next: quality rules, scorecard and a Power BI report.</sub>
@@ -154,9 +152,8 @@ if __name__ == "__main__":
 
 <!-- IMAGE: add the ERD here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/PATH/TO/erd.png" width="600" /> -->
 
-- **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught instead of silently reaching reports and pricing.
-- Worked in a 5-person team on a 17-table MySQL database for a simulated game store; wrote the busiest-day query (table-hours) and the peak-pricing query that prices each reservation by its overlap with peak hours (GREATEST / LEAST).
-- Rebuilt the repo with AI-assisted code review so it runs from scratch: fixed a load-script error that left 5 of 17 tables empty, fixed query bugs (date windows, ties, top-N window functions, revenue math), and pinned a snapshot date so results are reproducible.
+- **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught before they reach reports and pricing.
+- In a 5-person team building a 17-table MySQL database, I wrote the busiest-day and peak-pricing queries, then rebuilt the repo so it runs from scratch (fixed a load error that left 5 tables empty, plus date-window, tie and revenue bugs).
 
 🔗 [Repository](https://github.com/rynetroy/game_store_database) | [Project site](https://rynetroy.github.io/game_store_database/)
 
@@ -167,8 +164,7 @@ if __name__ == "__main__":
 <img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="600" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" />
 
 - **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
-- To test what that means for the area's future, I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
-- Visualized vacancy trends, business activity by sector and where activity is concentrated, so the gap between the two scenarios is easy to see.
+- I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
 
 🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis)
 <sub>The score is a constructed scenario index, not an official city metric. Some vacancy years are estimated; see the repo for methodology.</sub>
@@ -179,8 +175,8 @@ if __name__ == "__main__":
 
 <img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="600" alt="Superstore Power BI report: sales, average discount and profit margin by region" />
 
-- **Central gave the deepest discounts (24% on average) and earned the lowest margin (7.9%); its furniture sales lost money (−1.9% margin).** The West, with the lowest discounts (11%), had the most sales ($725K) and the best margin (14.9%), which makes Central's discounting the first thing to review.
-- Modeled a 9,994-row retail sales file into a star schema with Power Query and a DAX date table, wrote DAX measures (sales, profit, margin, YoY growth with SAMEPERIODLASTYEAR), and published a 5-page report to Power BI Service with insight-style chart titles.
+- **Central gave the deepest discounts (24%) and earned the lowest margin (7.9%), and its furniture sales lost money (−1.9%).** The West had the lowest discounts (11%), the most sales ($725K) and the best margin (14.9%).
+- Star schema in Power Query with a DAX date table, DAX measures (margin, YoY growth with SAMEPERIODLASTYEAR), and a 5-page report published to Power BI Service.
 
 🔗 [Repository](https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics)
 <sub>Built on the Superstore practice dataset. Discount and margin patterns are correlations, not tested causes.</sub>
@@ -193,10 +189,9 @@ if __name__ == "__main__":
 **Personal Project** | Oct 2026
 `Claude Code` `AI agents` `Slack integration` `Human-in-the-loop` `Permission design`
 
-- **The main design work was deciding what each agent is not allowed to do.** Every assistant started read-only and gets more access only after it proves reliable.
-- Designed the system, workflows and guardrails for a personal AI workspace (planner, builder and reviewer agents plus two live assistants), setting each agent's role, access limits and approval rules; generated most of the code with Claude Code.
-- **Margaux (business inbox):** sorts inquiries from my website and drafts replies from approved site copy. She never quotes prices or promises dates, holds suspicious messages, and sends nothing except my booking link without my approval in Slack.
-- **Sandra (personal workspace):** voice-activated, connected to my email, calendar and school deadlines with read-only access, and sends me morning briefs and evening recaps in Slack. Anything that needs action is reported to me, not done.
+- **The main design work was deciding what each agent is not allowed to do.** Every assistant starts read-only and gets more access only after it proves reliable. I designed the roles, access limits and approval rules; Claude Code generated most of the code.
+- **Margaux** sorts my website inquiries and drafts replies from approved copy. She never quotes prices or promises dates, and sends nothing except my booking link without my approval in Slack.
+- **Sandra** is voice-activated with read-only access to my email, calendar and school deadlines, and sends morning briefs and evening recaps in Slack. Anything that needs action comes to me.
 
 🎥 [Watch the Sandra + Margaux demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 <sub>Personal tool for my own use. Code is private; the demo shows it working.</sub>
@@ -205,19 +200,20 @@ if __name__ == "__main__":
 **Team Academic Project (5 members, in progress)** | Neural Networks & Deep Learning (COMP-3704) | Fall 2026
 `TensorFlow` `Keras` `CNN` `GRU` `OpenCV`
 
-- Team project building a webcam-based controller that recognizes dynamic hand gestures (Jester dataset) and turns them into presentation and multitasking commands, comparing a CNN-only baseline with a CNN-GRU model.
-- I'm the real-time application lead: live webcam capture with OpenCV, running the trained model on the video stream, mapping gestures to commands, and the safety controls (confidence thresholds, cooldowns) that stop normal hand movements from triggering actions. Demo expected Dec 2026.
+- A webcam controller that recognizes dynamic hand gestures (Jester dataset) and turns them into presentation commands, comparing a CNN-only baseline with a CNN-GRU model.
+- I'm the real-time application lead: OpenCV webcam capture, running the model on live video, mapping gestures to commands, and safety controls (confidence thresholds, cooldowns) so normal hand movements don't trigger actions. Demo expected Dec 2026.
 
 🔗 [Team repository](https://github.com/Qteneqja/GestureController)
+
 ---
 
 ## 🤝 Riipen Team Projects
 
 **FanRyng (Toronto startup)** | Riipen Labs, Team 71, Research Lead | Aug 2026
-- **Recommended piloting Live Trivia + Make Some Noise!** after leading research for a 5-person team across 7 NCAA Division I programs, with a 30/60/90-day rollout plan and KPIs (participation rate, reward redemption, leaderboard growth, fan and staff feedback).
+- **Recommended piloting Live Trivia + Make Some Noise!** after leading research for a 5-person team across 7 NCAA Division I programs, with a 30/60/90-day rollout plan and KPIs.
 
 **Astrum Digital** | Riipen Level Up (March Cohort), Team Project (2 members) | Feb 2026
-- Led product strategy for an AI-driven portfolio platform for retail investors: four investor personas, a KPI framework (allocation, risk signals, yield vs volatility) and the 16-slide project deck.
+- Led product strategy for an AI-driven portfolio platform for retail investors: four investor personas, a KPI framework and the 16-slide project deck.
 
 ---
 
@@ -225,8 +221,7 @@ if __name__ == "__main__":
 
 **Saks OFF 5TH, Winnipeg** | Store Director, Assistant Store Director, Selling Manager | May 2018 to Apr 2025
 - Ran a $2M+ store (6 leaders, 15 associates, 6 departments), responsible for sales, margin (~40% gross profit), payroll (~20%) and expenses.
-- Used weekly Looker sales-to-stock and department dashboards (this year vs last year), Storeforce reports and traffic data (~1,500 to 2,500 weekly visits) to make staffing, inventory, markdown and assortment decisions.
-- Planned staffing for 90%+ selling-hour coverage, managed 15K to 20K units with shrink below 2%, and tracked operational issues to resolution in Jira.
+- Used weekly Looker sales-to-stock dashboards (this year vs last year), Storeforce reports and traffic data to make staffing, inventory, markdown and assortment decisions; managed 15K to 20K units with shrink below 2%.
 
 **H&M, Winnipeg** | Visual Merchandising Manager; Keyholder | Aug 2014 to Apr 2018
 - Part of the $4M Kildonan Place store launch; keyholder at H&M's first Winnipeg location ($10M+).
@@ -247,6 +242,7 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 **Data & BI**
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat-square&logo=microsoft&logoColor=white)
@@ -270,7 +266,7 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 
 ## 📬 Connect
 
-Looking for a Winter 2027 co-op or internship in data analytics, BI or applied AI. Happy to connect with anyone working where business and data meet.
+Looking for a Winter 2027 co-op or internship in data analytics, BI, data governance or applied AI. Happy to connect with anyone working where business and data meet.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 
