@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
 - **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%).** A marketing team could focus spend on those sessions instead of treating every visitor the same.
 - Found them with an XGBoost model (~0.80 ROC-AUC), checked for data leakage with train, validation and test splits, and calibrated probabilities (Platt scaling) so the scores could be read as real likelihoods.
-- Turned the calibrated scores into expected revenue ($1.97M predicted vs $1.74M actual on the test set) and used SHAP to show which behaviours drive conversion, in a live Streamlit demo for non-technical review.
+- Turned the calibrated scores into expected revenue ($1.98M predicted vs $1.74M actual on the test set, +13.6%) and used SHAP to show which behaviours drive conversion, in a live Streamlit demo for non-technical review.
 
 🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Live demo](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 <sub>Prototype on synthetic GA4-style data. Not a production model.</sub>
@@ -154,7 +154,7 @@ if __name__ == "__main__":
 <img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="600" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" />
 
 - **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
-- To test what that means for the area's future, I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~73 if planned development stays on schedule, ~34 if it stalls.
+- To test what that means for the area's future, I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
 - Visualized vacancy trends, business activity by sector and where activity is concentrated, so the gap between the two scenarios is easy to see.
 
 🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis)
@@ -164,9 +164,13 @@ if __name__ == "__main__":
 **Independent Academic Project** | Data Management (COMP-2702) | Apr 2026
 `Power BI` `DAX` `Power Query`
 
+<img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="600" alt="Superstore Power BI report: sales, average discount and profit margin by region" />
+
+- **Central gave the deepest discounts (24% on average) and earned the lowest margin (7.9%); its furniture sales lost money (−1.9% margin).** The West, with the lowest discounts (11%), had the most sales ($725K) and the best margin (14.9%), which makes Central's discounting the first thing to review.
 - Modeled a 9,994-row retail sales file into a star schema with Power Query and a DAX date table, wrote DAX measures (sales, profit, margin, YoY growth with SAMEPERIODLASTYEAR), and published a 5-page report to Power BI Service with insight-style chart titles.
 
-<sub>Not posted publicly: course rules don't allow sharing it on GitHub.</sub>
+🔗 [Repository](https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics)
+<sub>Built on the Superstore practice dataset. Discount and margin patterns are correlations, not tested causes.</sub>
 
 ---
 
