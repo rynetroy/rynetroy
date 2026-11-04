@@ -50,11 +50,13 @@ I spent 10+ years running retail stores, reading sales, margin, traffic and inve
 <sub>Not posted publicly: course rules don't allow sharing it on GitHub.</sub>
 
 ### DROP IF Orphan: Game Store Database (SQL)
-**Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026
-`SQL` `MySQL` `GitHub Pages`
+**Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
+`SQL` `MySQL` `MariaDB` `GitHub Pages`
 
-- Worked in a 5-person team to design and query a 17-table MySQL database for a simulated game store; wrote the busiest-day query (table-hours with TIMESTAMPDIFF) and a peak-pricing query that calculates each reservation's cost from its overlap with peak hours (GREATEST / LEAST).
-- Published the team's project site on GitHub Pages presenting the business scenario, ERD and all 13 SQL queries.
+- Worked in a 5-person team to design and query a 17-table MySQL database for a simulated game store; wrote the busiest-day query (table-hours) and the peak-pricing query that calculates each reservation's cost from its overlap with peak hours (GREATEST / LEAST).
+- Rebuilt the repo with AI-assisted code review so the database runs from scratch: split the schema, demo data and 13 queries into SQL files, and fixed a load-script error that left 5 of 17 tables empty.
+- Fixed bugs in the team's queries (date windows, ties, top-N with window functions, revenue and price-per-die math) and pinned a snapshot date so results are reproducible.
+- Added 19 validation checks and a data quality report showing problems the schema allows, such as 18 of 35 table bookings falling outside store hours.
 
 🔗 [Repository](https://github.com/rynetroy/game_store_database) | [Project site](https://rynetroy.github.io/game_store_database/)
 
