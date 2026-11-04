@@ -23,7 +23,7 @@
 
 I spent 10+ years running retail stores, reading sales, margin, traffic and inventory reports every week to decide what to do next. Now I'm studying Data Science & Machine Learning and building the other half: SQL, Power BI, Python and machine learning.
 
-A model can be accurate and still solve the wrong problem. A dashboard can look great and still not help anyone decide anything. So I start with the questions from the sales floor (Why are sales missing plan? Why isn't inventory moving? Which KPIs actually matter?) and work toward a decision someone can act on.
+A model can be accurate and still solve the wrong problem. So every project below is written the same way: **what the data shows, what it means, and what I'd do about it.**
 
 **What is happening? → So what does it mean? → What should be done next?**
 
@@ -126,20 +126,24 @@ if __name__ == "__main__":
 **Independent Academic Project** | Supervised Machine Learning (COMP-2704) | Apr 2026
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
-- Built a purchase-prediction prototype on synthetic GA4-style ecommerce data (~0.80 ROC-AUC); top-decile sessions converted at 15.33% vs a 5.16% baseline (~3.0x).
-- Tested for data leakage with train, validation and test splits, and calibrated probabilities (Platt scaling) to estimate expected revenue ($1.97M vs $1.74M actual test revenue).
-- Explained predictions with SHAP and published a live Streamlit demo for non-technical review.
+<!-- IMAGE: add your lift or calibration chart here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/Predictive-Funnel-Analytics-GA4/main/PATH/TO/chart.png" width="600" /> -->
+
+- **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%).** A marketing team could focus spend on those sessions instead of treating every visitor the same.
+- Found them with an XGBoost model (~0.80 ROC-AUC), checked for data leakage with train, validation and test splits, and calibrated probabilities (Platt scaling) so the scores could be read as real likelihoods.
+- Turned the calibrated scores into expected revenue ($1.97M predicted vs $1.74M actual on the test set) and used SHAP to show which behaviours drive conversion, in a live Streamlit demo for non-technical review.
 
 🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Live demo](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
-<sub>Prototype on synthetic data. Not a production model.</sub>
+<sub>Prototype on synthetic GA4-style data. Not a production model.</sub>
 
 ### DROP IF Orphan: Game Store Database (SQL)
 **Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
 `SQL` `MySQL` `MariaDB` `GitHub Pages`
 
+<!-- IMAGE: add the ERD here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/PATH/TO/erd.png" width="600" /> -->
+
+- **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught instead of silently reaching reports and pricing.
 - Worked in a 5-person team on a 17-table MySQL database for a simulated game store; wrote the busiest-day query (table-hours) and the peak-pricing query that prices each reservation by its overlap with peak hours (GREATEST / LEAST).
-- Rebuilt the repo with AI-assisted code review so it runs from scratch: split schema, demo data and 13 queries into SQL files, fixed a load-script error that left 5 of 17 tables empty, and fixed query bugs (date windows, ties, top-N window functions, revenue math).
-- Added 19 validation checks and a data quality report showing problems the schema allows, such as 18 of 35 table bookings falling outside store hours.
+- Rebuilt the repo with AI-assisted code review so it runs from scratch: fixed a load-script error that left 5 of 17 tables empty, fixed query bugs (date windows, ties, top-N window functions, revenue math), and pinned a snapshot date so results are reproducible.
 
 🔗 [Repository](https://github.com/rynetroy/game_store_database) | [Project site](https://rynetroy.github.io/game_store_database/)
 
@@ -147,8 +151,11 @@ if __name__ == "__main__":
 **Independent Academic Project** | Python Essentials With Data Analysis (COMP-2040) | Apr 2026
 `Python` `pandas` `matplotlib` `scikit-learn`
 
-- Combined office vacancy, investment pipeline and business-activity data into a weighted scenario index (63/100) and modeled on-schedule (~73) vs stalled (~34) development outcomes.
-- Tracked office vacancy rising from 8.7% (2016) to 18.6% (2025) and visualized vacancy trends, business activity by sector and spatial concentration.
+<!-- IMAGE: add the vacancy trend chart here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/downtown-winnipeg-transition-analysis/main/PATH/TO/vacancy.png" width="600" /> -->
+
+- **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
+- To test what that means for the area's future, I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~73 if planned development stays on schedule, ~34 if it stalls.
+- Visualized vacancy trends, business activity by sector and where activity is concentrated, so the gap between the two scenarios is easy to see.
 
 🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis)
 <sub>The score is a constructed scenario index, not an official city metric. Some vacancy years are estimated; see the repo for methodology.</sub>
@@ -157,7 +164,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Data Management (COMP-2702) | Apr 2026
 `Power BI` `DAX` `Power Query`
 
-- Modeled a 9,994-row retail sales file into a star schema with Power Query and a DAX date table, wrote DAX measures (sales, profit, margin, YoY growth with SAMEPERIODLASTYEAR), and published a 5-page report to Power BI Service.
+- Modeled a 9,994-row retail sales file into a star schema with Power Query and a DAX date table, wrote DAX measures (sales, profit, margin, YoY growth with SAMEPERIODLASTYEAR), and published a 5-page report to Power BI Service with insight-style chart titles.
 
 <sub>Not posted publicly: course rules don't allow sharing it on GitHub.</sub>
 
@@ -169,10 +176,10 @@ if __name__ == "__main__":
 **Personal Project** | Oct 2026
 `Claude Code` `AI agents` `Slack integration` `Human-in-the-loop` `Permission design`
 
+- **The main design work was deciding what each agent is not allowed to do.** Every assistant started read-only and gets more access only after it proves reliable.
 - Designed the system, workflows and guardrails for a personal AI workspace (planner, builder and reviewer agents plus two live assistants), setting each agent's role, access limits and approval rules; generated most of the code with Claude Code.
 - **Margaux (business inbox):** sorts inquiries from my website and drafts replies from approved site copy. She never quotes prices or promises dates, holds suspicious messages, and sends nothing except my booking link without my approval in Slack.
 - **Sandra (personal workspace):** voice-activated, connected to my email, calendar and school deadlines with read-only access, and sends me morning briefs and evening recaps in Slack. Anything that needs action is reported to me, not done.
-- Started every assistant read-only and expanded access only after it proved reliable, so the main design work was deciding what each agent is **not** allowed to do.
 
 🎥 [Watch the Sandra + Margaux demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 <sub>Personal tool for my own use. Code is private; the demo shows it working.</sub>
@@ -188,7 +195,7 @@ if __name__ == "__main__":
 ## 🤝 Riipen Team Projects
 
 **FanRyng (Toronto startup)** | Riipen Labs, Team 71, Research Lead | Aug 2026
-- Led research for a 5-person team across 7 NCAA Division I programs, producing a pilot recommendation (Live Trivia + Make Some Noise!), a 30/60/90-day rollout plan and the pilot's KPIs.
+- **Recommended piloting Live Trivia + Make Some Noise!** after leading research for a 5-person team across 7 NCAA Division I programs, with a 30/60/90-day rollout plan and KPIs (participation rate, reward redemption, leaderboard growth, fan and staff feedback).
 
 **Astrum Digital** | Riipen Level Up (March Cohort), Team Project (2 members) | Feb 2026
 - Led product strategy for an AI-driven portfolio platform for retail investors: four investor personas, a KPI framework (allocation, risk signals, yield vs volatility) and the 16-slide project deck.
@@ -225,25 +232,20 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat-square&logo=microsoft&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
 
 **Python & Machine Learning**
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square)
 ![SHAP](https://img.shields.io/badge/SHAP-8A2BE2?style=flat-square)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=flat-square&logo=matplotlib&logoColor=black)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 **Tools**
 ![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=flat-square&logo=github&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
+
+<sub>Also used in coursework: NumPy, Matplotlib, Jupyter, MongoDB, TensorFlow, GitHub Pages, Jira.</sub>
 
 ---
 
