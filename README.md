@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
 <img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="600" alt="Superstore Power BI report: sales, average discount and profit margin by region" />
 
-- **Central gave the deepest discounts (24%) and earned the lowest margin (7.9%), and its furniture sales lost money (−1.9%).** The West had the lowest discounts (11%), the most sales ($725K) and the best margin (14.9%).
+- **Central gave the deepest discounts (24%) and earned the lowest margin (7.9%), and its furniture sales lost money (-1.9%).** The West had the lowest discounts (11%), the most sales ($725K) and the best margin (14.9%).
 - Star schema in Power Query with a DAX date table, DAX measures (margin, YoY growth with SAMEPERIODLASTYEAR), and a 5-page report published to Power BI Service.
 
 🔗 [Repository](https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics)
