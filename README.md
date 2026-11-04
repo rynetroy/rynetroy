@@ -90,15 +90,17 @@ I spent 10+ years running retail stores, reading sales, margin, traffic and inve
 
 ## 🤖 AI Builds
 
-### Troy OS: Personal AI Workspace
+### Troy OS: Personal AI Workspace (Sandra + Margaux)
 **Personal Project** | Oct 2026
-`Claude Code` `AI agents` `Slack integration` `Human-in-the-loop`
+`Claude Code` `AI agents` `Slack integration` `Human-in-the-loop` `Permission design`
 
 - Designed the system, workflows and guardrails for a personal AI workspace (planner, builder and reviewer agents plus two live assistants), setting each agent's role, access limits and approval rules; generated most of the code with Claude Code.
-- Connected an email assistant to my business inbox, website and Slack: it drafts replies from approved website copy, never quotes prices or dates, holds suspicious messages, and sends anything beyond simple first inquiries to me for approval in Slack.
-- Connected a voice-activated workspace assistant to my email, calendar and school deadlines with read-only access first, so each agent proves it works before it gets more permissions.
+- **Margaux (business inbox):** sorts inquiries from my website and drafts replies from approved site copy. She never quotes prices or promises dates, holds suspicious messages, and sends nothing except my booking link without my approval in Slack.
+- **Sandra (personal workspace):** voice-activated, connected to my email, calendar and school deadlines with read-only access, and sends me morning briefs and evening recaps in Slack. Anything that needs action is reported to me, not done.
+- Started every assistant read-only and expanded access only after it proved reliable, so the main design work was deciding what each agent is **not** allowed to do.
 
-<sub>Personal tool for my own use. Code is private.</sub>
+🎥 [Watch the Sandra + Margaux demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
+<sub>Personal tool for my own use. Code is private; the demo shows it working.</sub>
 
 ### Dynamic Hand Gesture Recognition (CNN + RNN)
 **Team Academic Project (in progress)** | Neural Networks & Deep Learning (COMP-3704) | Fall 2026
