@@ -6,7 +6,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-PFA--GA4-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
-[![Website](https://img.shields.io/badge/Website-tdraconsulting.com-1F2937?style=flat-square&logo=vercel&logoColor=white)](https://tdraconsulting.com)
+[![Demo Video](https://img.shields.io/badge/Demo-Sandra%20%2B%20Margaux-D97757?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 
 ---
 
@@ -254,6 +254,8 @@ Working in data, analytics, BI or retail? I'd be glad to connect.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 
 📍 Winnipeg, MB | Open to opportunities across Canada
+
+I'm also building [TDRA Consulting](https://tdraconsulting.com), a small data and BI practice for local businesses. It's in development, and Margaux (above) handles its inbox.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Views&color=58A6FF&style=flat-square)
 
