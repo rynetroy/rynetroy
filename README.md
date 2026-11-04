@@ -126,7 +126,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Supervised Machine Learning (COMP-2704) | Apr 2026
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
-<!-- IMAGE: add your lift or calibration chart here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/Predictive-Funnel-Analytics-GA4/main/PATH/TO/chart.png" width="600" /> -->
+<img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="600" alt="Conversion rate by propensity decile" />
 
 - **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%).** A marketing team could focus spend on those sessions instead of treating every visitor the same.
 - Found them with an XGBoost model (~0.80 ROC-AUC), checked for data leakage with train, validation and test splits, and calibrated probabilities (Platt scaling) so the scores could be read as real likelihoods.
@@ -151,7 +151,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Python Essentials With Data Analysis (COMP-2040) | Apr 2026
 `Python` `pandas` `matplotlib` `scikit-learn`
 
-<!-- IMAGE: add the vacancy trend chart here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/downtown-winnipeg-transition-analysis/main/PATH/TO/vacancy.png" width="600" /> -->
+<img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="600" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" />
 
 - **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
 - To test what that means for the area's future, I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~73 if planned development stays on schedule, ~34 if it stalls.
