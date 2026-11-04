@@ -225,7 +225,7 @@ if __name__ == "__main__":
 **Red River College Polytechnic**, Data Science & Machine Learning, Applied Diploma | Aug 2025 to May 2027
 Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Information & Data Architecture, Unsupervised ML, Neural Networks & Deep Learning, Introduction to AI
 
-**Certifications:** Introduction to MongoDB, MongoDB, Inc. (Apr 2026) · Collaboration and Team Dynamics, IBM SkillsBuild (Aug 2026) · AWS Certified AI Business Strategist (AIB-C01), in progress · AWS Academy Data Engineering, in progress (coursework)
+**Certifications:** Introduction to MongoDB, MongoDB, Inc. (Apr 2026) · Collaboration and Team Dynamics, IBM SkillsBuild (Aug 2026) · Preparing for AWS Certified AI Business Strategist (AIB-C01) · AWS Academy Data Engineering, in progress (coursework)
 
 ---
 
@@ -257,7 +257,7 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 
 ## 📬 Connect
 
-Working in data, analytics, BI or retail? I'd be glad to connect.
+Looking for a Winter 2027 co-op or internship in data analytics, BI or applied AI. Happy to connect with anyone working where business and data meet.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 
