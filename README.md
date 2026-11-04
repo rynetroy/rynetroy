@@ -188,12 +188,14 @@ if __name__ == "__main__":
 🎥 [Watch the Sandra + Margaux demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 <sub>Personal tool for my own use. Code is private; the demo shows it working.</sub>
 
-### Dynamic Hand Gesture Recognition (CNN + RNN)
-**Team Academic Project (in progress)** | Neural Networks & Deep Learning (COMP-3704) | Fall 2026
-`TensorFlow` `CNN` `RNN`
+### Dynamic Hand Gesture Recognition (CNN + GRU)
+**Team Academic Project (5 members, in progress)** | Neural Networks & Deep Learning (COMP-3704) | Fall 2026
+`TensorFlow` `Keras` `CNN` `GRU` `OpenCV`
 
-- Team project building a touch-free presentation controller (swipe for slides, play / pause video); I'm responsible for model evaluation and metrics. Results expected Dec 2026.
+- Team project building a webcam-based controller that recognizes dynamic hand gestures (Jester dataset) and turns them into presentation and multitasking commands, comparing a CNN-only baseline with a CNN-GRU model.
+- I'm the real-time application lead: live webcam capture with OpenCV, running the trained model on the video stream, mapping gestures to commands, and the safety controls (confidence thresholds, cooldowns) that stop normal hand movements from triggering actions. Demo expected Dec 2026.
 
+🔗 [Team repository](https://github.com/Qteneqja/GestureController)
 ---
 
 ## 🤝 Riipen Team Projects
