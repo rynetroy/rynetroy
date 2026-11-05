@@ -206,26 +206,6 @@ if __name__ == "__main__":
 
 🔗 [Team repository](https://github.com/Qteneqja/GestureController)
 
----
-
-## 🤝 Riipen Team Projects
-
-**FanRyng (Toronto startup)** | Riipen Labs, Team 71, Research Lead | Aug 2026
-- **Recommended piloting Live Trivia + Make Some Noise!** after leading research for a 5-person team across 7 NCAA Division I programs, with a 30/60/90-day rollout plan and KPIs.
-
-**Astrum Digital** | Riipen Level Up (March Cohort), Team Project (2 members) | Feb 2026
-- Led product strategy for an AI-driven portfolio platform for retail investors: four investor personas, a KPI framework and the 16-slide project deck.
-
----
-
-## 💼 Professional Experience
-
-**Saks OFF 5TH, Winnipeg** | Store Director, Assistant Store Director, Selling Manager | May 2018 to Apr 2025
-- Ran a $2M+ store (6 leaders, 15 associates, 6 departments), responsible for sales, margin (~40% gross profit), payroll (~20%) and expenses.
-- Used weekly Looker sales-to-stock dashboards (this year vs last year), Storeforce reports and traffic data to make staffing, inventory, markdown and assortment decisions; managed 15K to 20K units with shrink below 2%.
-
-**H&M, Winnipeg** | Visual Merchandising Manager; Keyholder | Aug 2014 to Apr 2018
-- Part of the $4M Kildonan Place store launch; keyholder at H&M's first Winnipeg location ($10M+).
 
 ---
 
