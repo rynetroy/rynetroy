@@ -5,7 +5,7 @@
 **Business x Data x AI Problem Solver** | Winnipeg, MB | Available for a Winter 2027 co-op (Jan 2027)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
-[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:tdelarosa48@academic.rrc.ca)
+[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-PFA--GA4-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 [![Demo Video](https://img.shields.io/badge/Demo-Sandra%20%2B%20Margaux-D97757?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 
@@ -127,7 +127,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Supervised Machine Learning (COMP-2704) | Apr 2026
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
-<img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="600" alt="Conversion rate by propensity decile" />
+<a href="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4"><img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="450" alt="Conversion rate by propensity decile" /></a>
 
 - **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%),** so a marketing team could focus spend there instead of treating every visitor the same.
 - XGBoost model (~0.80 ROC-AUC) with leakage checks and calibrated probabilities (Platt scaling), turned into expected revenue ($1.98M predicted vs $1.74M actual on the test set, +13.6%) and explained with SHAP in a live Streamlit demo.
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 **Independent Personal Project** | Data governance on public data | Nov 2026, in progress
 `Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
 
-<img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="600" alt="Map of downtown Winnipeg and surrounding neighbourhoods: of 196 active licences in the City's Downtown planning area in November 2026, 5 are inside the CentrePlan 2050 downtown boundary" />
+<a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="450" alt="Map of downtown Winnipeg and surrounding neighbourhoods: of 196 active licences in the City's Downtown planning area in November 2026, 5 are inside the CentrePlan 2050 downtown boundary" /></a>
 
 - **Of 196 active licences the City's data labels "Downtown", only 5 are inside the City's own downtown plan boundary (CentrePlan 2050);** most of the rest are rooming houses in surrounding neighbourhoods. The count also depended on the pull date: in April 2026, 621 records said "Issued" but only 34 were active once duplicates and expired licences were removed.
 - Built a pipeline that saves dated, never-overwritten snapshots from the City's open data API, compares them and maps licences by neighbourhood, plus a governance charter, RACI, decision log and code-generated data dictionary. Raw records stay out of the repo because some include addresses that may belong to individuals.
@@ -151,7 +151,7 @@ if __name__ == "__main__":
 **Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
 `SQL` `MySQL` `MariaDB` `GitHub Pages`
 
-<img src="https://github.com/rynetroy/game_store_database/raw/main/images/erd.png" width="600" alt="Entity relationship diagram of the 17-table game store database" />
+<a href="https://github.com/rynetroy/game_store_database"><img src="https://github.com/rynetroy/game_store_database/raw/main/images/erd.png" width="450" alt="Entity relationship diagram of the 17-table game store database" /></a>
 
 - **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught before they reach reports and pricing.
 - In a 5-person team building a 17-table MySQL database, I wrote the busiest-day and peak-pricing queries, then rebuilt the repo so it runs from scratch (fixed a load error that left 5 tables empty, plus date-window, tie and revenue bugs).
@@ -162,7 +162,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Python Essentials With Data Analysis (COMP-2040) | Apr 2026
 `Python` `pandas` `matplotlib` `scikit-learn`
 
-<img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="600" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" />
+<a href="https://github.com/rynetroy/downtown-winnipeg-transition-analysis"><img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="450" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" /></a>
 
 - **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
 - I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
@@ -174,7 +174,7 @@ if __name__ == "__main__":
 **Independent Academic Project** | Data Management (COMP-2702) | Apr 2026
 `Power BI` `DAX` `Power Query`
 
-<img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="600" alt="Superstore Power BI report: sales, average discount and profit margin by region" />
+<a href="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics"><img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="450" alt="Superstore Power BI report: sales, average discount and profit margin by region" /></a>
 
 - **Central gave the deepest discounts (24%) and earned the lowest margin (7.9%), and its furniture sales lost money (-1.9%).** The West had the lowest discounts (11%), the most sales ($725K) and the best margin (14.9%).
 - Star schema in Power Query with a DAX date table, DAX measures (margin, YoY growth with SAMEPERIODLASTYEAR), and a 5-page report published to Power BI Service.
@@ -277,3 +277,5 @@ Looking for a Winter 2027 co-op or internship in data analytics, BI, data govern
 📍 Winnipeg, MB | Open to opportunities across Canada
 
 I'm also building [TDRA Consulting](https://tdraconsulting.com), a small data and BI practice for local businesses. It's in development, and Margaux (above) handles its inbox.
+
+![Profile Views](https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Views&color=58A6FF&style=flat-square)
