@@ -5,6 +5,7 @@
 **Business x Data x AI Problem Solver** | Winnipeg, MB | Available for a Winter 2027 co-op (Jan 2027)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
+[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-PFA--GA4-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 [![Demo Video](https://img.shields.io/badge/Demo-Sandra%20%2B%20Margaux-D97757?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 
@@ -150,7 +151,7 @@ if __name__ == "__main__":
 **Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
 `SQL` `MySQL` `MariaDB` `GitHub Pages`
 
-<!-- IMAGE: add the ERD here, e.g. <img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/PATH/TO/erd.png" width="600" /> -->
+<img src="https://github.com/rynetroy/game_store_database/raw/main/images/erd.png" width="600" alt="Entity relationship diagram of the 17-table game store database" />
 
 - **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught before they reach reports and pricing.
 - In a 5-person team building a 17-table MySQL database, I wrote the busiest-day and peak-pricing queries, then rebuilt the repo so it runs from scratch (fixed a load error that left 5 tables empty, plus date-window, tie and revenue bugs).
@@ -239,10 +240,12 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 
 ## 🛠️ Technical Skills
 
-**Data & BI**
+**Databases & SQL**
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+
+**BI & Reporting**
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat-square&logo=microsoft&logoColor=white)
@@ -269,6 +272,7 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 Looking for a Winter 2027 co-op or internship in data analytics, BI, data governance or applied AI. Happy to connect with anyone working where business and data meet.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
+[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
 
 📍 Winnipeg, MB | Open to opportunities across Canada
 
