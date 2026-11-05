@@ -277,7 +277,3 @@ Looking for a Winter 2027 co-op or internship in data analytics, BI, data govern
 📍 Winnipeg, MB | Open to opportunities across Canada
 
 I'm also building [TDRA Consulting](https://tdraconsulting.com), a small data and BI practice for local businesses. It's in development, and Margaux (above) handles its inbox.
-
-![Profile Views](https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Views&color=58A6FF&style=flat-square)
-
-<img src="https://raw.githubusercontent.com/rynetroy/rynetroy/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
