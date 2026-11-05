@@ -136,15 +136,15 @@ if __name__ == "__main__":
 
 ### Winnipeg Business Licence Data Governance (DAMA-DMBOK)
 **Independent Personal Project** | Data governance on public data | Nov 2026, in progress
-`Python` `pandas` `DuckDB` `SQL` `REST API` `DAMA-DMBOK`
+`Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
 
-<img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_funnel.png" width="600" alt="Downtown licences counted as active, rule by rule: April 2026 621, 322, 34; November 2026 234, 197, 196" />
+<img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="600" alt="Map of downtown Winnipeg and surrounding neighbourhoods: of 196 active licences in the City's Downtown planning area in November 2026, 5 are inside the CentrePlan 2050 downtown boundary" />
 
-- **Counting "Issued" licences overstated active downtown licences about 18 times in April 2026 (621 vs 34 after removing duplicates and expired licences).** Seven months later the same count gave 196, after the City's status cleanup, and nothing on the portal documented the change.
-- Built a pipeline that saves dated, never-overwritten snapshots from the City's open data API and compares them (history added back to 2010, duplicate rows down from 55.8% to 15.6%), plus a governance charter, RACI, decision log and code-generated data dictionary. Raw records stay out of the repo because some include addresses that may belong to individuals.
+- **Of 196 active licences the City's data labels "Downtown", only 5 are inside the City's own downtown plan boundary (CentrePlan 2050);** most of the rest are rooming houses in surrounding neighbourhoods. The count also depended on the pull date: in April 2026, 621 records said "Issued" but only 34 were active once duplicates and expired licences were removed.
+- Built a pipeline that saves dated, never-overwritten snapshots from the City's open data API, compares them and maps licences by neighbourhood, plus a governance charter, RACI, decision log and code-generated data dictionary. Raw records stay out of the repo because some include addresses that may belong to individuals.
 
 🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
-<sub>Personal project on City of Winnipeg open data, not affiliated with or endorsed by the City. Next: quality rules, scorecard and a Power BI report.</sub>
+<sub>Personal project on City of Winnipeg open data, not affiliated with or endorsed by the City. Downtown neighbourhoods matched to the CentrePlan 2050 map by eye. Next: quality rules, scorecard and a Power BI report.</sub>
 
 ### DROP IF Orphan: Game Store Database (SQL)
 **Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
