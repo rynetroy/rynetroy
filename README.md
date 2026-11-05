@@ -5,7 +5,7 @@
 **Business x Data x AI Problem Solver** | Winnipeg, MB | Available for a Winter 2027 co-op (Jan 2027)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
-[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
+[![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:tdelarosa48@academic.rrc.ca)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-PFA--GA4-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 [![Demo Video](https://img.shields.io/badge/Demo-Sandra%20%2B%20Margaux-D97757?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 
