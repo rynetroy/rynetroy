@@ -1,8 +1,9 @@
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=58A6FF&vCenter=true&width=850&lines=Business+x+Data+x+AI+Problem+Solver;10%2B+Years+Retail+Operations+%2B+Data+Science;Business+Questions+%E2%86%92+Data+%E2%86%92+Decisions" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&pause=1000&color=58A6FF&vCenter=true&width=850&lines=Analytics+%26+Business+Intelligence;10%2B+Years+Retail+Operations+%E2%86%92+Data+%26+Analytics;What+is+happening%3F+%E2%86%92+So+what%3F+%E2%86%92+What+next%3F" />
 
 # Troy Dela Rosa
 
-**Business x Data x AI Problem Solver** | Winnipeg, MB | Available for a Winter 2027 co-op (Jan 2027)
+**Analytics & Business Intelligence Student | Former Retail Store Director** | Winnipeg, MB  
+Available for Winter 2027 Co-op / Internship (January 2027)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 [![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
@@ -15,247 +16,134 @@
 
 | | |
 |---|---|
-| **Education** | Data Science & Machine Learning, Applied Diploma, Red River College Polytechnic (Aug 2025 to May 2027) |
-| **Experience** | 10+ years in retail operations, most recently Store Director at Saks OFF 5TH ($2M+ store, 6 leaders, 15 associates) |
-| **Focus** | Data analytics, business intelligence, data governance, predictive modeling, applied AI |
-| **Looking for** | Winter 2027 co-op or internship in data analytics, BI, data governance or applied AI. Eligible to work full-time in Canada |
+| **Education** | Applied Diploma in Data Science & Machine Learning, Red River College Polytechnic (Aug 2025 to May 2027) |
+| **Work Background** | 10+ years in retail management. Store Director at Saks OFF 5TH Winnipeg (store P&L, shrink, inventory, scheduling, team of 15 associates). Earlier Visual Merchandising Manager at H&M Winnipeg |
+| **Technical Focus** | Business intelligence, dimensional modeling (star schema), data governance (DAMA-DMBOK), predictive analytics |
+| **Availability** | Full-time Winter 2027 co-op / internship (Data Analyst, BI, Data Governance, Operations Analytics). Eligible to work in Canada |
+
+<!-- NEEDS EVIDENCE: add a store P&L figure (e.g. annual sales) only if you can confirm the number. -->
+
+---
 
 ## How I Work
 
-I spent 10+ years running retail stores, reading sales, margin, traffic and inventory reports every week to decide what to do next. Now I'm building the other half: SQL, Power BI, Python and machine learning.
+For over a decade I ran retail stores using weekly sales, margin, inventory and traffic reports to decide staffing, merchandising and floor priorities. As a report user, I saw where those reports helped and where they didn't: numbers that arrived late, metrics that didn't match how the store actually ran, and dashboards that showed what happened without pointing to what to do next.
 
-A model can be accurate and still solve the wrong problem, so every project below answers three questions:
+Now I'm learning to build the layers behind those reports: SQL databases, dimensional models, data quality checks and explainable models.
 
-**What is happening? → So what does it mean? → What should be done next?**
-
-<details>
-<summary>🐍 <b>framework.py: Not All Pain Is Progress</b> (the story behind the career change)</summary>
-
-<br/>
-
-After more than a decade in retail leadership, the store I'd built my career around closed. Instead of climbing the same ladder somewhere else, I went back to school. I used to measure progress by career height. Now I measure it by what I can do that I couldn't do before. This small script is that idea told in a language I'm learning (a personal story, not an application).
-
-```python
-"""
-NOT ALL PAIN IS PROGRESS
-A Personal Framework for Career Evolution
-"""
-
-from dataclasses import dataclass, field
-
-
-@dataclass
-class CareerState:
-    title: str
-    years_built: int
-    skills: list[str] = field(default_factory=list)
-    progress_metric: str = "career_height"
-
-
-class ProfessionalJourney:
-
-    def __init__(self):
-        self.state = CareerState(
-            title="Store Director",
-            years_built=10,
-            skills=[
-                "Leadership",
-                "Operations",
-                "People Management",
-                "Business Decision Making",
-                "Decision Making Under Pressure",
-            ],
-        )
-
-    def trigger_disruption(self):
-        print(">>> EVENT: Store closure announced.")
-        print(">>> RESULT: The old career path is no longer available.")
-
-    def redefine_progress(self):
-        self.state.progress_metric = "capability"
-
-        print("--- PERSPECTIVE SHIFT ---")
-        print("Old metric: Career height")
-        print("New metric: Capability")
-
-    def execute_pivot(self):
-        new_capabilities = [
-            "Python",
-            "Statistics",
-            "Linear Algebra",
-            "SQL",
-            "Data Analysis",
-            "Machine Learning",
-        ]
-
-        self.state.skills.extend(new_capabilities)
-        self.state.title = "Data Science & Machine Learning Student"
-
-    def calculate_trajectory(self):
-        return """
-Progress is not a straight line upward.
-
-Sometimes the ladder disappears.
-
-The old life is gone.
-The foundation remains.
-The direction has changed.
-
-Not all pain is progress,
-but the right kind of discomfort
-builds something the old version of you didn't have.
-"""
-
-
-if __name__ == "__main__":
-    journey = ProfessionalJourney()
-
-    journey.trigger_disruption()
-    journey.redefine_progress()
-    journey.execute_pivot()
-
-    print(journey.calculate_trajectory())
-```
-
-</details>
+Every project below tries to answer three questions:  
+**What is happening?** ➔ **So what does it mean?** ➔ **What should be done next?**
 
 ---
 
-## 📊 Data & Analytics Projects
+## 📊 Analytics & BI Projects
 
-### Predictive Funnel Analytics (PFA-GA4)
-**Independent Academic Project** | Supervised Machine Learning (COMP-2704) | Apr 2026
-`Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
+### 1. Superstore Sales & Margin Dashboard (Power BI)
+**Academic Project (solo)** | Data Management (COMP-2702) | Apr 2026  
+`Power BI` `DAX` `Power Query` `Star Schema`
 
-<a href="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4"><img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="450" alt="Conversion rate by propensity decile" /></a>
+<a href="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics"><img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="480" alt="Superstore Power BI report: sales, average discount and profit margin by region" /></a>
 
-- **The top 10% of sessions converted at 3x the baseline (15.33% vs 5.16%),** so a marketing team could focus spend there instead of treating every visitor the same.
-- XGBoost model (~0.80 ROC-AUC) with leakage checks and calibrated probabilities (Platt scaling), turned into expected revenue ($1.98M predicted vs $1.74M actual on the test set, +13.6%) and explained with SHAP in a live Streamlit demo.
-
-🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Live demo](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
-<sub>Prototype on synthetic GA4-style data. Not a production model.</sub>
-
-### Winnipeg Business Licence Data Governance (DAMA-DMBOK)
-**Independent Personal Project** | Data governance on public data | Nov 2026, in progress
-`Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
-
-<a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="450" alt="Map of downtown Winnipeg and surrounding neighbourhoods: of 196 active licences in the City's Downtown planning area in November 2026, 5 are in neighbourhoods fully inside the CentrePlan 2050 downtown boundary" /></a>
-
-- **Of 196 active licences the City's data labels "Downtown", only 5 are in neighbourhoods fully inside the City's own downtown plan boundary (CentrePlan 2050);** 103 more are in neighbourhoods the plan partly covers, mostly rooming houses. In April 2026, 621 records said "Issued", but 34 were left once duplicates and expired licences were removed. By November the City had corrected those statuses.
-- Built a pipeline that saves dated, never-overwritten snapshots from the City's open data API, compares them and maps licences by neighbourhood, plus a governance charter, RACI, decision log, issue log, testable quality rules and a code-generated data dictionary. Raw records stay out of the repo because some include addresses that may belong to individuals.
-
-🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
-<sub>Personal project on City of Winnipeg open data, not affiliated with or endorsed by the City. Counts use my own working definitions; downtown neighbourhoods matched to the CentrePlan 2050 map by eye. Next: a data quality scorecard and a Power BI report.</sub>
-
-### DROP IF Orphan: Game Store Database (SQL)
-**Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026, portfolio edition Nov 2026
-`SQL` `MySQL` `MariaDB` `GitHub Pages`
-
-<a href="https://github.com/rynetroy/game_store_database"><img src="https://github.com/rynetroy/game_store_database/raw/main/images/erd.png" width="450" alt="Entity relationship diagram of the 17-table game store database" /></a>
-
-- **The schema let 18 of 35 table bookings fall outside store hours.** I added 19 validation checks and a data quality report so problems like this are caught before they reach reports and pricing.
-- In a 5-person team building a 17-table MySQL database, I wrote the busiest-day and peak-pricing queries, then rebuilt the repo so it runs from scratch (fixed a load error that left 5 tables empty, plus date-window, tie and revenue bugs).
-
-🔗 [Repository](https://github.com/rynetroy/game_store_database) | [Project site](https://rynetroy.github.io/game_store_database/)
-
-### Downtown Winnipeg Transition Analysis
-**Independent Academic Project** | Python Essentials With Data Analysis (COMP-2040) | Apr 2026
-`Python` `pandas` `matplotlib` `scikit-learn`
-
-<a href="https://github.com/rynetroy/downtown-winnipeg-transition-analysis"><img src="https://github.com/rynetroy/downtown-winnipeg-transition-analysis/raw/main/visuals/fig_vacancy.png" width="450" alt="Office vacancy rates: Winnipeg vs. the national average, 2016 to 2025" /></a>
-
-- **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
-- I combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
-
-🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis)
-<sub>The score is a constructed scenario index, not an official city metric. Some vacancy years are estimated; see the repo for methodology.</sub>
-
-### Superstore Sales Dashboard (Power BI)
-**Independent Academic Project** | Data Management (COMP-2702) | Apr 2026
-`Power BI` `DAX` `Power Query`
-
-<a href="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics"><img src="https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics/raw/main/images/02_sales_by_region.png" width="450" alt="Superstore Power BI report: sales, average discount and profit margin by region" /></a>
-
-- **Central gave the deepest discounts (24%) and earned the lowest margin (7.9%), and its furniture sales lost money (-1.9%).** The West had the lowest discounts (11%), the most sales ($725K) and the best margin (14.9%).
-- Star schema in Power Query with a DAX date table, DAX measures (margin, YoY growth with SAMEPERIODLASTYEAR), and a 5-page report published to Power BI Service.
+- **Finding:** Central had the deepest average discount (24%) and the weakest margin (7.9%), with Furniture running at a loss (-1.9%). West discounted less (11%) and earned a 14.9% margin on $725K in sales.
+- **Build:** Star schema in Power Query (fact table plus dimension tables), a DAX date table and time intelligence measures (including `SAMEPERIODLASTYEAR`), published as a 5-page Power BI Service report: Dashboard, Sales by Region, Predictive Insights, Prescriptive Recommendation, Certified Visual.
 
 🔗 [Repository](https://github.com/rynetroy/Retail-Sales-Forecasting-Pricing-Analytics)
-<sub>Built on the Superstore practice dataset. Discount and margin patterns are correlations, not tested causes.</sub>
 
 ---
 
-## 🤖 AI Builds
+### 2. Winnipeg Business Licence Data Governance (DAMA-DMBOK)
+**Independent Project** | City of Winnipeg Open Data | Nov 2026, in progress  
+`Python` `DuckDB` `SQL` `REST API` `DAMA-DMBOK` `Data Quality`
 
-### Troy OS: Personal AI Workspace (Sandra + Margaux)
-**Personal Project** | Oct 2026
-`Claude Code` `AI agents` `Slack integration` `Human-in-the-loop` `Permission design`
+<a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="480" alt="Map of downtown Winnipeg business licences" /></a>
 
-- **The main design work was deciding what each agent is not allowed to do.** Every assistant starts read-only and gets more access only after it proves reliable. I designed the roles, access limits and approval rules; Claude Code generated most of the code.
-- **Margaux** sorts my website inquiries and drafts replies from approved copy. She never quotes prices or promises dates, and sends nothing except my booking link without my approval in Slack.
-- **Sandra** is voice-activated with read-only access to my email, calendar and school deadlines, and sends morning briefs and evening recaps in Slack. Anything that needs action comes to me.
+- **Finding:** Of 196 active licences tagged "Downtown" in the open data, only 5 fall inside the CentrePlan 2050 downtown boundary. The dataset's "Downtown" label and the official planning boundary define downtown differently, so analysis needs to pick one deliberately.
+- **Cleaning:** Filtered 621 historical records to 34 valid active licences after removing expired and duplicate entries.
+- **Build:** Repeatable extraction pipeline that saves unchanged raw snapshots in DuckDB, schema validation rules, an auto-generated data dictionary, and DAMA-DMBOK documentation (governance charter, RACI matrix).
 
-🎥 [Watch the Sandra + Margaux demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
-<sub>Personal tool for my own use. Code is private; the demo shows it working.</sub>
+🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
 
-### Dynamic Hand Gesture Recognition (CNN + GRU)
-**Team Academic Project (5 members, in progress)** | Neural Networks & Deep Learning (COMP-3704) | Fall 2026
-`TensorFlow` `Keras` `CNN` `GRU` `OpenCV`
+---
 
-- A webcam controller that recognizes dynamic hand gestures (Jester dataset) and turns them into presentation commands, comparing a CNN-only baseline with a CNN-GRU model.
-- I'm the real-time application lead: OpenCV webcam capture, running the model on live video, mapping gestures to commands, and safety controls (confidence thresholds, cooldowns) so normal hand movements don't trigger actions. Demo expected Dec 2026.
+### 3. Predictive Funnel Analytics (PFA-GA4)
+**Academic Project (solo)** | Supervised Machine Learning (COMP-2704) | Apr 2026  
+`Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
-🔗 [Team repository](https://github.com/Qteneqja/GestureController)
+<a href="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4"><img src="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4/raw/main/visualizations/propensity_decile.png" width="480" alt="Conversion rate by propensity decile" /></a>
 
+- **Finding:** On synthetic GA4-style ecommerce sessions, the top propensity decile converted at about 3x the baseline (15.4% vs 5.2%), and the top 20% of sessions accounted for about 55% of revenue. In a real setting, that ranking could help focus retargeting spend.
+- **Model:** Calibrated XGBoost conversion model (ROC-AUC about 0.80; other classifiers tested landed at a similar level) combined with a linear regression spend estimate: expected revenue = P(conversion) × predicted spend. Calibrated expected revenue came out at $1.98M vs $1.74M actual (+13.6%).
+- **App:** Streamlit prototype with SHAP explanations. Not a production system.
+
+🔗 [Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | [Interactive App](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
+
+---
+
+### 4. Game Store Relational Database
+**Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | Apr 2026  
+`SQL` `MySQL` `MariaDB` `Schema Design` `Data Integrity`
+
+<a href="https://github.com/rynetroy/game_store_database"><img src="https://github.com/rynetroy/game_store_database/raw/main/images/erd.png" width="480" alt="Entity relationship diagram of the 17-table game store database" /></a>
+
+- **Team work:** 17-table normalized schema, 19 validation constraints and audit queries (including a fix that blocks table bookings outside store hours), peak-pricing and capacity reports, and reproducible setup scripts. Schema, scripts and data were built together by the team.
+- **Now:** I'm cleaning up and documenting a portfolio edition of the project (Nov 2026).
+
+🔗 [Repository](https://github.com/rynetroy/game_store_database) | [Project Site](https://rynetroy.github.io/game_store_database/)
+
+---
+
+## 🤝 Riipen Team Projects
+
+- **FanRyng** (Riipen Labs, team of 5): research and strategy for a Toronto fan engagement startup on NCAA Division I programs. I led the research, built the Excel research tracker and wrote the final report; the strategy was developed with the team.
+- **Astrum Digital** (Riipen, team of 2 with Mary Zhou): concept work on an explainable AI portfolio intelligence tool for retail investors.
+
+---
+
+## 🤖 Personal AI Project
+
+### Troy OS: Personal Assistant Workspace (Sandra + Margaux)
+**Personal Prototype** | Oct 2026, in use  
+`AI Agents` `Human-in-the-Loop` `Slack API` `Permission Design`
+
+- **Sandra:** reads my email and calendar (read-only) and sends morning briefs and evening recaps in Slack.
+- **Margaux:** drafts replies to TDRA Consulting inquiry emails using approved website copy. She never quotes prices or commits to dates, holds suspicious emails, and anything involving price, scope or contracts waits for my approval in Slack.
+- **My role:** I designed the system, workflows, guardrails and permission rules. Most of the code was written with AI assistance (Claude Code). The code is private; the demo video shows it working.
+
+🎥 [Watch the demo](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
+
+---
+
+## 🛠️ Skills
+
+| Area | Tools | What I've done with them |
+| :--- | :--- | :--- |
+| **BI & Analytics** | Power BI, DAX, Power Query, Excel | Star schema models, time intelligence, multi-page reports, margin analysis |
+| **SQL & Data Modeling** | MySQL, MariaDB, DuckDB | Normalized schema design (team), validation queries, snapshot pipelines |
+| **Data Governance** | DAMA-DMBOK | Governance charter, RACI matrix, data dictionary, data quality rules |
+| **Python & ML** | pandas, NumPy, scikit-learn, XGBoost, SHAP, Streamlit | Propensity modeling, probability calibration, model explanations, prototype apps |
+| **Retail Operations** | Store management | Store P&L, shrink, inventory, staff scheduling, visual merchandising |
 
 ---
 
 ## 🎓 Education & Certifications
 
-**Red River College Polytechnic**, Data Science & Machine Learning, Applied Diploma | Aug 2025 to May 2027
+**Red River College Polytechnic**, Data Science & Machine Learning, Applied Diploma | Aug 2025 to May 2027  
 Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Information & Data Architecture, Unsupervised ML, Neural Networks & Deep Learning, Introduction to AI
 
-**Certifications:** Introduction to MongoDB, MongoDB, Inc. (Apr 2026) · Collaboration and Team Dynamics, IBM SkillsBuild (Aug 2026) · Preparing for AWS Certified AI Business Strategist (AIB-C01) · AWS Academy Data Engineering, in progress (coursework)
+**Certifications:** Introduction to MongoDB, MongoDB, Inc. (Apr 2026) · Collaboration and Team Dynamics, IBM SkillsBuild (Aug 2026)  
+**In progress:** AWS Certified AI Business Strategist (AIB-C01), exam prep
+
+<!-- NEEDS EVIDENCE: re-add "AWS Academy Data Engineering (In Progress)" only if you are actually enrolled. -->
 
 ---
 
-## 🛠️ Technical Skills
+## 📬 Contact
 
-**Databases & SQL**
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
-
-**BI & Reporting**
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat-square&logo=microsoft&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-
-**Python & Machine Learning**
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square)
-![SHAP](https://img.shields.io/badge/SHAP-8A2BE2?style=flat-square)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-
-**Tools**
-![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
-
-<sub>Also used in coursework: NumPy, Matplotlib, Jupyter, MongoDB, TensorFlow, GitHub Pages, Jira.</sub>
-
----
-
-## 📬 Connect
-
-Looking for a Winter 2027 co-op or internship in data analytics, BI, data governance or applied AI. Happy to connect with anyone working where business and data meet.
+* **Target roles:** Data Analyst, BI Analyst, Data Governance Analyst, Operations Analytics
+* **Co-op availability:** Full-time from January 2027 (Winter 2027 term)
+* **Location:** Winnipeg, MB (open to local, hybrid or remote roles in Canada)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Troy%20Dela%20Rosa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 [![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
 
-📍 Winnipeg, MB | Open to opportunities across Canada
-
-I'm also building [TDRA Consulting](https://tdraconsulting.com), a small data and BI practice for local businesses. It's in development, and Margaux (above) handles its inbox.
-
-![Profile Views](https://komarev.com/ghpvc/?username=rynetroy&label=Profile%20Views&color=58A6FF&style=flat-square)
+Founder of [TDRA Consulting](https://tdraconsulting.com), an early-stage practice focused on practical data and BI for small businesses.
