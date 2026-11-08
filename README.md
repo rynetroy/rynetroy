@@ -53,13 +53,13 @@ Every project below tries to answer three questions:
 
 ### 2. Winnipeg Business Licence Data Governance (DAMA-DMBOK)
 **Independent Project** | City of Winnipeg Open Data | Nov 2026, in progress  
-`Python` `DuckDB` `SQL` `REST API` `DAMA-DMBOK` `Data Quality`
+`dbt` `DuckDB` `SQL` `Python` `DAMA-DMBOK` `Data Quality`
 
 <a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://github.com/rynetroy/winnipeg-licence-governance/raw/main/reports/figures/downtown_map.png" width="480" alt="Map of downtown Winnipeg business licences" /></a>
 
 - **Finding:** Of 196 active licences tagged "Downtown" in the open data, only 5 fall inside the CentrePlan 2050 downtown boundary. The dataset's "Downtown" label and the official planning boundary define downtown differently, so analysis needs to pick one deliberately.
 - **Cleaning:** Filtered 621 historical records to 34 valid active licences after removing expired and duplicate entries.
-- **Build:** Repeatable extraction pipeline that saves unchanged raw snapshots in DuckDB, schema validation rules, an auto-generated data dictionary, and DAMA-DMBOK documentation (governance charter, RACI matrix).
+- **Build:** Repeatable extraction pipeline saving raw DuckDB snapshots, modular dbt transformation layers (staging ➔ intermediate ➔ marts) with automated data quality test assertions, auto-generated data dictionary, and DAMA-DMBOK documentation.
 
 🔗 [Repository](https://github.com/rynetroy/winnipeg-licence-governance)
 
