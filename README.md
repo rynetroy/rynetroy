@@ -21,7 +21,7 @@ Available for Winter 2027 Co-op / Internship (January 2027)
 | **Technical Focus** | Business intelligence, dimensional modeling (star schema), data governance (DAMA-DMBOK), predictive analytics |
 | **Availability** | Full-time Winter 2027 co-op / internship (Data Analyst, BI, Data Governance, Operations Analytics). Eligible to work in Canada |
 
-<!-- NEEDS EVIDENCE: add a store P&L figure (e.g. annual sales) only if you can confirm the number. -->
+
 
 ---
 
@@ -29,7 +29,7 @@ Available for Winter 2027 Co-op / Internship (January 2027)
 
 For over a decade I ran retail stores using weekly sales, margin, inventory and traffic reports to decide staffing, merchandising and floor priorities. As a report user, I saw where those reports helped and where they didn't: numbers that arrived late, metrics that didn't match how the store actually ran, and dashboards that showed what happened without pointing to what to do next.
 
-Now I'm learning to build the layers behind those reports: SQL databases, dimensional models, data quality checks and explainable models.
+Now I build the data layers behind those reports: relational databases, dimensional models (star schemas), automated quality gates, and explainable models.
 
 Every project below tries to answer three questions:  
 **What is happening?** ➔ **So what does it mean?** ➔ **What should be done next?**
@@ -133,7 +133,6 @@ Coursework: Python, SQL, Statistics, Machine Learning, Data Management, Informat
 **Certifications:** Introduction to MongoDB, MongoDB, Inc. (Apr 2026) · Collaboration and Team Dynamics, IBM SkillsBuild (Aug 2026)  
 **In progress:** AWS Certified AI Business Strategist (AIB-C01), exam prep
 
-<!-- NEEDS EVIDENCE: re-add "AWS Academy Data Engineering (In Progress)" only if you are actually enrolled. -->
 
 ---
 
