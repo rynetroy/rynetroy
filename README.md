@@ -27,6 +27,8 @@ Available for Winter 2027 Co-op / Internship (January 2027)
 
 ## How I Work
 
+> **"If you look at my work, you'll see a consistent pattern: I specialize in data reconciliation and funnel auditing.** I take high-volume, unvetted raw data, pass it through rigorous governance, testing, or algorithms, and isolate the exact 1–5% of data or workflows that actually matter for decisions. I don't just build pipelines; I build filter systems."
+
 For over a decade I ran retail stores using weekly sales, margin, inventory and traffic reports to decide staffing, merchandising and floor priorities. As a report user, I saw where those reports helped and where they didn't: numbers that arrived late, metrics that didn't match how the store actually ran, and dashboards that showed what happened without pointing to what to do next.
 
 Now I build the data layers behind those reports: relational databases, dimensional models (star schemas), automated quality gates, and explainable models.
