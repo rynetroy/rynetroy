@@ -40,24 +40,24 @@ Every project below answers three questions:
 ---
 
 ## 📊 Featured Projects
-
 ### 1. Winnipeg Business Licence Data Governance
-**Independent Personal Project** | City of Winnipeg open data | November 2026 (Phase 1 of 2, in progress)  
-`Python` `pandas` `DuckDB` `SQL` `REST API` `DAMA-DMBOK`
+**Independent Personal Project** | City of Winnipeg open data | November 2026 (Phase 2 of 3, in progress)  
+`Python` `pandas` `DuckDB` `SQL` `REST API` `matplotlib` `DAMA-DMBOK`
 
-<a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://raw.githubusercontent.com/rynetroy/winnipeg-licence-governance/main/reports/figures/downtown_funnel.png" width="480" alt="Downtown licences counted as active, rule by rule: April 2026 621, 322, 34; November 2026 234, 197, 196" /></a>
+<a href="https://github.com/rynetroy/winnipeg-licence-governance"><img src="https://raw.githubusercontent.com/rynetroy/winnipeg-licence-governance/main/reports/figures/downtown_map.png" width="480" alt="Map of downtown Winnipeg and surrounding neighbourhoods: of 196 active licences in the City's Downtown planning area in November 2026, 5 are in neighbourhoods fully inside the CentrePlan 2050 downtown boundary" /></a>
 
-- **Business Question:** Can the City of Winnipeg's business licence data be trusted for decisions like counting active downtown businesses?
+- **Business Question:** Can the City of Winnipeg's business licence data be trusted for decisions like counting active downtown businesses, and what can it never tell you?
 - **Key Findings:**
-  * Counting "Issued" licences overstated active downtown licences about 18 times in April 2026: 621 records, 322 after removing duplicates, 34 after removing expired licences.
-  * Seven months later the same count gave 196, after the City cleaned up expired statuses (1,655 expired-but-"Issued" records citywide fell to 1), and nothing on the portal documented the change.
+  * Of 196 active licences in the City's "Downtown" planning area (November 2026), only 5 are in neighbourhoods fully inside the City's own downtown plan boundary (CentrePlan 2050); 103 more are in neighbourhoods the plan partly covers, mostly rooming houses.
+  * In April 2026, counting "Issued" records overstated the same count about 18 times: 621 records, 322 after removing duplicates, 34 after removing expired licences.
+  * By November the City had corrected expired statuses (1,655 expired-but-"Issued" records citywide fell to 1), with no changelog on the dataset page.
 - **What I Built:**
-  * A pipeline that pulls the City's open data API into dated snapshots that are never overwritten, then compares them (history added back to 2010, duplicate rows down from 55.8% to 15.6%).
-  * A governance charter, RACI, decision log and a data dictionary generated from code.
+  * A pipeline that pulls the City's open data API into dated snapshots that are never overwritten, refuses incomplete pulls, and compares snapshots.
+  * A governance charter, RACI, decision log, issue log, testable quality rules and a data dictionary generated from code.
   * Raw records stay out of the repo because some licence types include addresses that may belong to individuals.
 
 🔗 [View Repository](https://github.com/rynetroy/winnipeg-licence-governance)  
-<sub>Personal project on public data, not affiliated with or endorsed by the City of Winnipeg. Next: quality rules, scorecard and a Power BI report.</sub>
+<sub>Personal project on public data, not affiliated with or endorsed by the City of Winnipeg. Counts use my own working definitions; downtown neighbourhoods matched to the CentrePlan 2050 map by eye. Next: a data quality scorecard and a Power BI report.</sub>
 
 ---
 
