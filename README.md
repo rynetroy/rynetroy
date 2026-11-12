@@ -62,12 +62,12 @@ Every project below answers three questions:
 ---
 
 ### 2. Superstore Sales & Margin Dashboard
-**Independent Academic Project** | Data Management (COMP-2702) | April 2026  
+**Independent Academic Project** | April 2026  
 `Power BI` `DAX` `Power Query` `Star Schema`
 
 <a href="https://github.com/rynetroy/superstore-pricing-analytics"><img src="https://raw.githubusercontent.com/rynetroy/superstore-pricing-analytics/main/images/02_sales_by_region.png" width="480" alt="Superstore Power BI report: sales, average discount and profit margin by region" /></a>
 
-- **Business Question:** Which regions and categories earn their sales, and where is discounting costing more than it brings in?
+- **Business Question:** Which regions and categories earn their sales, and where do the deepest discounts line up with the weakest margins?
 - **Key Findings:**
   * Central had the deepest average discount (24%) and the weakest margin (7.9%), and its furniture sales lost money (-1.9% margin).
   * The West discounted least (11%) and earned the best margin (14.9%) on the most sales ($725K), so Central's discounting is the first thing to review.
@@ -82,17 +82,17 @@ Every project below answers three questions:
 ---
 
 ### 3. Predictive Funnel Analytics (PFA-GA4)
-**Independent Academic Project** | Supervised Machine Learning (COMP-2704) | April 2026  
+**Independent Academic Project** | April 2026  
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
 <a href="https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4"><img src="https://raw.githubusercontent.com/rynetroy/Predictive-Funnel-Analytics-GA4/main/visualizations/propensity_decile.png" width="480" alt="Conversion rate by propensity decile" /></a>
 
 - **Business Question:** Which ecommerce sessions are most likely to convert, and where should marketing spend go first?
 - **Key Findings:**
-  * The top 10% of sessions converted at 15.3%, about 3x the 5.2% baseline.
-  * The top 20% of sessions accounted for about 55% of expected revenue.
+  * The top 10% of sessions converted at 15.4%, about 3x the 5.2% baseline.
+  * The top 20% of sessions accounted for about 55% of actual revenue.
 - **What I Built:**
-  * A two-stage model: a calibrated XGBoost conversion classifier (ROC-AUC ~0.80) times a spend estimate, so expected revenue = P(conversion) × predicted spend ($1.98M predicted vs $1.74M actual on the test set, +13.6%).
+  * A calibrated XGBoost conversion classifier (ROC-AUC ~0.80). After calibration, expected revenue came to $1.98M against $1.74M actual on the test set (+13.6%). Session features did not predict basket size, so the spend stage is an average basket for now.
   * Leakage checks with train, validation and test splits, and SHAP to explain what drives each score.
   * An interactive Streamlit demo for non-technical review.
 
@@ -102,7 +102,7 @@ Every project below answers three questions:
 ---
 
 ### 4. DROP IF Orphan: Game Store Database
-**Team Academic Project (5 members)** | Transforming Data Into Databases (COMP-1701) | April 2026, portfolio edition November 2026  
+**Team Academic Project (5 members)** | April 2026, portfolio edition November 2026  
 `SQL` `MySQL` `MariaDB` `Data Quality`
 
 <a href="https://github.com/rynetroy/game_store_database"><img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/images/erd.png" width="480" alt="Entity relationship diagram of the 17-table game store database" /></a>
@@ -120,13 +120,13 @@ Every project below answers three questions:
 
 <br/>
 
-**Downtown Winnipeg Transition Analysis** | Independent Academic Project | Python Essentials With Data Analysis (COMP-2040) | April 2026  
+**Downtown Winnipeg Transition Analysis** | Independent Academic Project | April 2026  
 `Python` `pandas` `matplotlib` `scikit-learn`
 - **Downtown office vacancy more than doubled, from 8.7% (2016) to 18.6% (2025).**
-- Combined vacancy, investment pipeline and business-activity data into a weighted scenario index: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
-- 🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis) <sub>(constructed scenario index, not an official city metric)</sub>
+- Tracked about $2.36B in named projects and 1,381 to 1,539 housing units, and built a scenario index from mostly my own assessed scores: 63/100 today, ~72 if planned development stays on schedule, ~34 if it stalls.
+- 🔗 [Repository](https://github.com/rynetroy/downtown-winnipeg-transition-analysis) <sub>(scenario index is my judgment, not a measurement or an official city metric)</sub>
 
-**Dynamic Hand Gesture Recognition (CNN + GRU)** | Team Academic Project (5 members, in progress) | Neural Networks & Deep Learning (COMP-3704) | Fall 2026  
+**Dynamic Hand Gesture Recognition (CNN + GRU)** | Team Academic Project (5 members, in progress) | Fall 2026  
 `TensorFlow` `Keras` `CNN` `GRU` `OpenCV`
 - A webcam controller that recognizes dynamic hand gestures (Jester dataset) and turns them into presentation commands, comparing a CNN-only baseline with a CNN-GRU model.
 - I'm the real-time application lead: OpenCV webcam capture, running the model on live video, mapping gestures to commands, and safety controls (confidence thresholds, cooldowns). Demo expected December 2026.
