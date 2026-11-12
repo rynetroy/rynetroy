@@ -8,7 +8,6 @@ Winnipeg, Manitoba, Canada · Available for a Winter 2027 co-op or internship (J
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tdra48-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/tdra48)
 [![Email](https://img.shields.io/badge/Email-troy.dlrs%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:troy.dlrs@gmail.com)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-PFA--GA4-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)
 [![Demo Video](https://img.shields.io/badge/Demo-Sandra%20%2B%20Margaux-D97757?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7516652514100936704/)
 
 ---
@@ -61,7 +60,22 @@ Every project below answers three questions:
 
 ---
 
-### 2. Superstore Sales & Margin Dashboard
+### 2. DROP IF Orphan: Game Store Database
+**Team Academic Project (5 members)** | April 2026, portfolio edition November 2026  
+`SQL` `MySQL` `MariaDB` `Data Quality`
+
+<a href="https://github.com/rynetroy/game_store_database"><img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/images/erd.png" width="480" alt="Entity relationship diagram of the 17-table game store database" /></a>
+
+- **Business Question:** Can a game store's bookings, pricing and sales data be trusted before it reaches reports?
+- **Key Finding:** The schema allowed 18 of 35 table bookings to fall outside store hours, so I added 19 validation checks and a data quality report to catch problems like this before they reach reports and pricing.
+- **What We Built:** A 17-table MySQL database for a simulated game store covering table bookings, peak pricing and retail sales.
+- **My Role:** Wrote the busiest-day query (table-hours) and the peak-pricing query (pricing each booking by its overlap with peak hours). Later rebuilt the repo so it runs from scratch, fixing a load error that left 5 of 17 tables empty plus date-window, tie and revenue bugs.
+
+🔗 [View Repository](https://github.com/rynetroy/game_store_database) | 🌐 [Project Site](https://rynetroy.github.io/game_store_database/)
+
+---
+
+### 3. Superstore Sales & Margin Dashboard
 **Independent Academic Project** | April 2026  
 `Power BI` `DAX` `Power Query` `Star Schema`
 
@@ -81,7 +95,7 @@ Every project below answers three questions:
 
 ---
 
-### 3. Predictive Funnel Analytics (PFA-GA4)
+### 4. Predictive Funnel Analytics (PFA-GA4)
 **Independent Academic Project** | April 2026  
 `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
 
@@ -92,26 +106,13 @@ Every project below answers three questions:
   * The top 10% of sessions converted at 15.4%, about 3x the 5.2% baseline.
   * The top 20% of sessions accounted for about 55% of actual revenue.
 - **What I Built:**
-  * A calibrated XGBoost conversion classifier (ROC-AUC ~0.80). After calibration, expected revenue came to $1.98M against $1.74M actual on the test set (+13.6%). Session features did not predict basket size, so the spend stage is an average basket for now.
+  * A calibrated XGBoost conversion classifier (ROC-AUC ~0.80). After calibration, expected revenue came to $1.98M against $1.74M actual on the test set (+13.6%).
+  * A spend stage that did not work yet: session features did not predict basket size, so it uses an average basket for now.
   * Leakage checks with train, validation and test splits, and SHAP to explain what drives each score.
   * An interactive Streamlit demo for non-technical review.
 
 🔗 [View Repository](https://github.com/rynetroy/Predictive-Funnel-Analytics-GA4) | 🚀 [Launch App](https://rynetroy-predictive-funnel-analytics-ga-appstreamlit-app-dcavuj.streamlit.app/)  
 <sub>Academic prototype on synthetic GA4-style data, not a production model.</sub>
-
----
-
-### 4. DROP IF Orphan: Game Store Database
-**Team Academic Project (5 members)** | April 2026, portfolio edition November 2026  
-`SQL` `MySQL` `MariaDB` `Data Quality`
-
-<a href="https://github.com/rynetroy/game_store_database"><img src="https://raw.githubusercontent.com/rynetroy/game_store_database/main/images/erd.png" width="480" alt="Entity relationship diagram of the 17-table game store database" /></a>
-
-- **Key Finding:** The schema allowed 18 of 35 table bookings to fall outside store hours, so I added 19 validation checks and a data quality report to catch problems like this before they reach reports and pricing.
-- **What We Built:** A 17-table MySQL database for a simulated game store covering table bookings, peak pricing and retail sales.
-- **My Role:** Wrote the busiest-day query (table-hours) and the peak-pricing query (pricing each booking by its overlap with peak hours). Later rebuilt the repo so it runs from scratch, fixing a load error that left 5 of 17 tables empty plus date-window, tie and revenue bugs.
-
-🔗 [View Repository](https://github.com/rynetroy/game_store_database) | 🌐 [Project Site](https://rynetroy.github.io/game_store_database/)
 
 ---
 
